@@ -12,7 +12,7 @@ PANELS = [
             f"vless://{client.id}@de-1.wsocks.ru:443?type=tcp&security=reality&pbk=c0DrIcQXeWqnmFysSVgfIVCcEr0LS_WJhlwxWsDnPWg&fp=chrome&sni=google.com&sid=bbdbd6f3&spx=%2F&flow=xtls-rprx-vision#WSocks VPN Germany"
          ),
        "create_link": lambda client: (
-           f"https://de-1.wsocks.ru:2096/SubWSocks_VPN_DE_FRA-1/{client.sub_id}"
+           f"https://agregator.wsocks.ru/sub/{client.sub_id}/WSocks"
        )
      }
     # {
