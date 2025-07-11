@@ -144,7 +144,8 @@ async def get_subscriptions(tg_id: int):
                 "email": sub['email'],
                 "panel": sub['panel'],
                 "expiry_date": sub['expiry_date'].strftime("%Y-%m-%d %H:%M:%S"),
-                "is_expired": sub['is_expired']
+                "is_expired": sub['is_expired'],
+                "sub_url": sub['sub_link']
             }
             for sub in subscriptions
         ]
