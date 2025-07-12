@@ -145,7 +145,8 @@ async def get_subscriptions(tg_id: int):
                 "panel": sub['panel'],
                 "expiry_date": sub['expiry_date'].strftime("%Y-%m-%d %H:%M:%S"),
                 "is_expired": sub['is_expired'],
-                "sub_url": sub['sub_link']
+                "sub_url": sub['sub_link'],
+                "redirect_url": f'{cfg.BASE_REDIRECT_URL}/?key={urllib.parse.quote(sub['sub_link'], safe="")}'
             }
             for sub in subscriptions
         ]
